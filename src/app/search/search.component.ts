@@ -13,8 +13,18 @@ export class SearchComponent implements OnInit {
 
   newHomeSearch = null;
 
+  filterBySale: string = "allHomes";
+
   makeNewKeg() {
     this.newHomeSearch = true;
+  }
+
+  onChange(optionFromMenu) {
+  this.filterBySale = optionFromMenu;
+  }
+
+  toggleSale(clickedHome: Home, setSale: boolean) {
+   clickedHome.sale = setSale;
   }
 
   constructor() { }

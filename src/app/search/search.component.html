@@ -13,6 +13,22 @@
 <form class="" action="index.html" method="post">
   <input type="text" name="homeSaleSearch" >
   <button class="btn btn-primary" (click)="makeNewSearch()">Search</button>
-
-
 </form>
+
+<select (change)="onChange($event.target.value)">
+  <option value="allHomes">All Homes</option>
+  <option value="completedHomes">Completed Homes</option>
+  <option value="incompleteHomes" selected="selected">Incomplete Homes</option>
+</select>
+
+<ul>
+  <li [class]="priorityColor(currentHome)" *ngFor="let currentHome of childHomeList | completeness:filterBySale">{{currentHome.description}} {{currentHome.price}}
+    <input *ngIf="currentHome.sale === true" type="checkbox" checked (click)="toggleSale(currentHome, false)"/>
+    <input *ngIf="currentHome.sale === false" type="checkbox" (click)="toggleSale(currentHome, true)"/>
+    <button (click)="editButtonClicked(currentHome)">Edit!</button>
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let currentHome of childTaskList | onsale">
+</ul>

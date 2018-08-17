@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { OnSalesPipe } from './onsale.pipe';
 
 
 import { AppComponent } from './app.component';
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     RentComponent,
     BuyComponent,
     ZestimateComponent,
-    HomeComponent
+    HomeComponent,
+    OnSalesPipe
   ],
   imports: [
     BrowserModule
