@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Home } from '../models/home';
+import { homeList } from '../models/allHomes';
 
 @Component({
   selector: 'app-search',
@@ -6,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+
+  homes = homeList;
+
+  newHomeSearch = null;
+
+  makeNewKeg() {
+    this.newHomeSearch = true;
+  }
 
   constructor() { }
 
