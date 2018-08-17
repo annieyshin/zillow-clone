@@ -15,7 +15,7 @@ export class SearchComponent implements OnInit {
 
   filterBySale: string = "allHomes";
 
-  makeNewKeg() {
+  makeNewHome() {
     this.newHomeSearch = true;
   }
 
