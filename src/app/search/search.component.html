@@ -1,34 +1,40 @@
-<nav class="navbar navbar-light bg-faded">
-  <a class="navbar-brand" href="/#/">Find your way home</a>
-  <ul class="nav navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="/#/">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/#/search">Search</a>
+<div class="container">
+  <div class="jumbotron">
+    <p id="homePageTitleText">Find your way home</p>
+  </div>
+
+</div>
+  <nav class="navbar navbar-light bg-faded">
+    <a class="navbar-brand" href="/#/">Find your way home</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/#/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/#/search">Search</a>
+      </li>
+    </ul>
+  </nav>
+
+  <form class="" action="index.html" method="post">
+    <input type="text" name="homeSaleSearch" >
+    <button class="btn btn-primary" (click)="makeNewSearch()">Search</button>
+  </form>
+
+  <select (change)="onChange($event.target.value)">
+    <option value="allHomes">All Homes</option>
+    <option value="completedHomes">Completed Homes</option>
+    <option value="incompleteHomes" selected="selected">Incomplete Homes</option>
+  </select>
+
+  <ul>
+    <li [class]="priorityColor(currentHome)" *ngFor="let currentHome of childHomeList | onsale:filterBySale">{{currentHome.description}} {{currentHome.price}}
+      <input *ngIf="currentHome.sale === true" type="checkbox" checked (click)="toggleSale(currentHome, false)"/>
+      <input *ngIf="currentHome.sale === false" type="checkbox" (click)="toggleSale(currentHome, true)"/>
+      <button (click)="editButtonClicked(currentHome)">Edit!</button>
     </li>
   </ul>
-</nav>
 
-<form class="" action="index.html" method="post">
-  <input type="text" name="homeSaleSearch" >
-  <button class="btn btn-primary" (click)="makeNewSearch()">Search</button>
-</form>
-
-<select (change)="onChange($event.target.value)">
-  <option value="allHomes">All Homes</option>
-  <option value="completedHomes">Completed Homes</option>
-  <option value="incompleteHomes" selected="selected">Incomplete Homes</option>
-</select>
-
-<ul>
-  <li [class]="priorityColor(currentHome)" *ngFor="let currentHome of childHomeList | completeness:filterBySale">{{currentHome.description}} {{currentHome.price}}
-    <input *ngIf="currentHome.sale === true" type="checkbox" checked (click)="toggleSale(currentHome, false)"/>
-    <input *ngIf="currentHome.sale === false" type="checkbox" (click)="toggleSale(currentHome, true)"/>
-    <button (click)="editButtonClicked(currentHome)">Edit!</button>
-  </li>
-</ul>
-
-<ul>
-  <li *ngFor="let currentHome of childTaskList | onsale">
-</ul>
+  <ul>
+    <li *ngFor="let currentHome of childTaskList | onsale">
+  </ul>

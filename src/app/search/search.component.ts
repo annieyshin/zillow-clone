@@ -13,6 +13,8 @@ export class SearchComponent implements OnInit {
 
   newHomeSearch = null;
 
+
+
   filterBySale: string = "allHomes";
 
   makeNewHome() {
@@ -24,7 +26,17 @@ export class SearchComponent implements OnInit {
   }
 
   toggleSale(clickedHome: Home, setSale: boolean) {
-   clickedHome.sale = setSale;
+   clickedHome.onSale = setSale;
+   this.salePrice(clickedHome, setSale);
+  }
+
+  salePrice(clickedHome:Home, setSale: boolean ) {
+    if (clickedHome.onSale === true) {
+      clickedHome.price --;
+    } else {
+      clickedHome.price ++;
+    }
+    clickedHome.onSale=setSale;
   }
 
   constructor() { }
