@@ -1,18 +1,50 @@
 # ZillowClone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### Epicodus JavaScript Project Week 3, August 17, 2018
 
-## Development server
+#### By Annie Shin
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This is a project built in Angular to produce a zillow website clone. This project will have the ability to use the zillow API to utilize the ability to look at a geographic location to see homes for sale, rent, and to sell a home.  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Specs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+| Behavior | Input | Output |
+|----------|-------|--------|
+| Search for homes for sale in a specified area by entering address, neighborhood, city, or zip code| address, neighborhood, city, or zip code | list of properties for sale in the specified area
+| Search for homes for rent in a specified area by entering address, neighborhood, city, or zip code| address, neighborhood, city, or zip code | route to site to help sell your home or property |
+| Ability to sell home by entering address| address| see links to start selling home|
+
+## Setup on OSX
+
+* Install Node.js
+* npm install Typescript Version 2.1.4
+* npm install -g @angular/cli@1.6.5
+* Clone the repo
+* Run `ng build` to build the project
+* Run `ng serve` for a dev server.
+* Navigate to `http://localhost:4200/`
+
+## Contribution Requirements
+
+1. Clone the repo
+1. Make a new branch
+1. Commit and push your changes
+1. Create a PR
+
+## Technologies Used
+
+* JavaScript
+* Node.js
+* Bootstrap 4.1.3
+* Babel
+* Webpack
+* ESLint
+* Jasmine
+* Karma
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Running unit tests
 
@@ -25,3 +57,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Links
+
+* To visit this repository, go to: https://github.com/annieyshin/zillow-clone
+* To report any bugs, or if you have any questions, feel free to email me at: annieyshin@gmail.com
+
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2018 **Annie Shine**

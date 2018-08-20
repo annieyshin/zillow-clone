@@ -1,6 +1,12 @@
 #homePageTitleText {
   color: white;
   font-family: sans-serif;
-  background-color: blue;
+  background-color: green;
   font-size: 42pt;
+}
+
+.jumbotron {
+  width: 100%;
+  background: url('/assets/housefront.jpg');
+  background-repeat: repeat;
 }
