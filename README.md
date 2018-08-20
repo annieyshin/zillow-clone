@@ -26,6 +26,10 @@ This is a project built in Angular to produce a zillow website clone. This proje
 * Run `ng build` to build the project
 * Run `ng serve` for a dev server.
 * Navigate to `http://localhost:4200/`
+* Create a free account at : https://www.zillow.com/webservice/Registration.htm
+* Check your email for Zillow API confirmation of registration and Zillow Web Services Identification (ZWSID)
+* Create a ".env" file in the root directory of this Project
+* Type: `exports.apiKey = "Your ZWSID KEY HERE"` into file .env
 
 ## Contribution Requirements
 
