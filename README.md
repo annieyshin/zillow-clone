@@ -30,6 +30,8 @@ This is a project built in Angular to produce a zillow website clone. This proje
 * Check your email for Zillow API confirmation of registration and Zillow Web Services Identification (ZWSID)
 * Create a ".env" file in the root directory of this Project
 * Type: `exports.apiKey = "Your ZWSID KEY HERE"` into file .env
+* Create a Firebase account at: https://firebase.google.com/
+* Install angularfire2 with this command: `npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save`
 
 ## Contribution Requirements
 
