@@ -1,9 +1,10 @@
 <div class="container">
   <div class="jumbotron" id="homePageTitleText">
     <p >Find your way home</p>
-    <form class="" action="index.html" method="post">
-      <input type="text" name="homeSaleSearch" placeholder="Enter an address" >
-      <button class="btn btn-primary" (click)="makeNewSearch()">Search</button>
+    <br>
+    <form action="index.html" method="post">
+      <input class="homeSearchBar" type="text" name="homeSaleSearch" placeholder="Enter an address or city" >
+      <button id="blueSearchBtn" (click)="makeNewSearch()">Search</button>
     </form>
   </div>
   <nav class="navbar navbar-light bg-faded">

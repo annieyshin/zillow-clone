@@ -5,3 +5,15 @@
   font-size: 38pt;
   text-align: center;
 }
+
+form {
+                width:500px;
+                margin:50px auto;
+}
+
+
+.homeSearchBar {
+                padding:8px 15px;
+                background:white (50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
