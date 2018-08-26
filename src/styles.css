@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+#homePageTitleText {
+  width: 100%;
+  background: url('/assets/housefront.jpg');
+  height: 320px;
+  background-size: 100%;
+
+}

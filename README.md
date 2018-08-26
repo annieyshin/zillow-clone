@@ -32,6 +32,10 @@ This is a project built in Angular to produce a zillow website clone. This proje
 * Type: `exports.apiKey = "Your ZWSID KEY HERE"` into file .env
 * Create a Firebase account at: https://firebase.google.com/
 * Install angularfire2 with this command: `npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save`
+* Make sure the versions of angularfire2 and firebase in file package.json are: `"angularfire2": "4.0.0-rc.0" & "firebase": "^3.6.6"`if not, update to these versions and run `npm install`
+* Add the following line to file tsconfig.json: `"types": [ "firebase" ]`
+* Create file "api-keys.ts" in the src/app directory
+* Paste in the firebase credentials for web based app into this file
 
 ## Contribution Requirements
 

@@ -1,6 +1,10 @@
 <div class="container">
-  <div class="jumbotron">
-    <p id="homePageTitleText">Find your way home</p>
+  <div class="jumbotron" id="homePageTitleText">
+    <p >Find your way home</p>
+    <form class="" action="index.html" method="post">
+      <input type="text" name="homeSaleSearch" placeholder="Enter an address" >
+      <button class="btn btn-primary" (click)="makeNewSearch()">Search</button>
+    </form>
   </div>
   <nav class="navbar navbar-light bg-faded">
     <a class="navbar-brand" href="/#/">Find your way home</a>
@@ -14,10 +18,7 @@
     </ul>
   </nav>
 
-  <form class="" action="index.html" method="post">
-    <input type="text" name="homeSaleSearch" >
-    <button class="btn btn-primary" (click)="makeNewSearch()">Search</button>
-  </form>
+
 
   <select (change)="onChange($event.target.value)">
     <option value="allHomes">All Homes</option>
