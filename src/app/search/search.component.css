@@ -2,7 +2,10 @@
   color: white;
   font-family: sans-serif;
   background-color: green;
-  font-size: 38pt;
+  font-size: 34pt;
+  font-weight: lighter;
+  outline-style: solid white 2px;
+
   text-align: center;
 }
 
@@ -16,4 +19,6 @@ form {
                 padding:8px 15px;
                 background:white (50, 50, 50, 0.2);
                 border:0px solid #dbdbdb;
+                height: 25px;
+                width: 200px;
 }
